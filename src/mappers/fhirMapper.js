@@ -20,8 +20,10 @@ export class FHIRMapper {
       parsedHL7.diagnoses.forEach(diagnosis => {
         resources.push(this.createConditionResource(diagnosis));
       });
-    }
 
+
+
+      
     if (parsedHL7.order) {
       resources.push(this.createServiceRequestResource(parsedHL7.order));
     }
