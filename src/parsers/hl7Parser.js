@@ -7,6 +7,7 @@ export class HL7Parser {
       allergies: [],
       diagnoses: []
     };
+    
     segments.forEach(segment => {
       const fields = segment.split('|');
       const segmentType = fields[0];
