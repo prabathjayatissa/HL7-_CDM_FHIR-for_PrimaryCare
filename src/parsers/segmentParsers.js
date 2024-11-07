@@ -28,6 +28,7 @@ export class SegmentParsers {
     };
   }
 
+  
   static parseDG1(fields) {
     return {
       diagnosisCode: fields[3],
@@ -37,6 +38,7 @@ export class SegmentParsers {
     };
   }
 
+  
   static parseProvider(field) {
     if (!field) return null;
     const parts = field.split('^');
