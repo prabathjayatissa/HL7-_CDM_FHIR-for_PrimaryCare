@@ -12,7 +12,7 @@ export class HL7Parser {
       const fields = segment.split('|');
       const segmentType = fields[0];
 
-      switch (segmentType) {
+      switch (segmentType) { 
         case 'EVN':
           parsedMessage.event = SegmentParsers.parseEVN(fields);
           break;
