@@ -5,11 +5,9 @@ export class FHIRMapper {
     if (parsedHL7.patient) {
       resources.push(this.createPatientResource(parsedHL7.patient));
     }
-
     if (parsedHL7.visit) {
       resources.push(this.createEncounterResource(parsedHL7.visit, parsedHL7.event));
     }
-
     if (parsedHL7.allergies?.length > 0) {
       parsedHL7.allergies.forEach(allergy => {
         resources.push(this.createAllergyIntoleranceResource(allergy));
