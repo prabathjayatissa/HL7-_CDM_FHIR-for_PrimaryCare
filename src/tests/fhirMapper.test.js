@@ -15,6 +15,7 @@ test('converts patient data to FHIR Patient resource', () => {
         city: 'Boston',
         state: 'MA',
         postalCode: '02115'
+        
       }
     }
   };
