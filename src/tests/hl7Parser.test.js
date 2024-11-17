@@ -14,6 +14,7 @@ test('parses PID segment correctly', () => {
   expect(result.patient.gender).toBe('M');
 });
 
+
 test('parses OBR segment correctly', () => {
   const hl7Message = 'OBR|1|12345|12345|CBC|||||20230101||||||||||||||||F';
   const result = parser.parse(hl7Message);
