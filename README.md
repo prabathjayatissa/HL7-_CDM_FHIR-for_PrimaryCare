@@ -1,4 +1,4 @@
-HL7-_CDM_FHIR-for_PrimaryCare
+# HL7_CDM_FHIR-for_PrimaryCare
 
 I've enhanced the HL7 to FHIR mapper with comprehensive primary care support:
 
