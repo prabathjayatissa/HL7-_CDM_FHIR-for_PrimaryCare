@@ -260,12 +260,5 @@ export class FHIRMapper {
     return statusMap[hl7Status] || 'unknown';
   }
  
-  formatDate(date) {
-    if (!date) return undefined;
-    // Convert YYYYMMDD to YYYY-MM-DD
-    if (date.length === 8) {
-      return `${date.substring(0, 4)}-${date.substring(4, 6)}-${date.substring(6, 8)}`;
-    }
-    return date;
-  }
+ 
 }
