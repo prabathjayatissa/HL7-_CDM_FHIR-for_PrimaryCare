@@ -37,7 +37,15 @@ export class SegmentParsers {
       diagnosisDateTime: fields[5]
     };
   }
-
+  static parseProvider(field) {
+    if (!field) return null;
+    const parts = field.split('^');
+    return {
+      id: parts[0] || '',
+      lastName: parts[1] || '',
+      firstName: parts[2] || '',
+      specialty: parts[9] || ''
+    };
   
   
   }
