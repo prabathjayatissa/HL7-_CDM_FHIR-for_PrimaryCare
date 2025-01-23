@@ -259,7 +259,7 @@ export class FHIRMapper {
     };
     return statusMap[hl7Status] || 'unknown';
   }
-
+ 
   formatDate(date) {
     if (!date) return undefined;
     // Convert YYYYMMDD to YYYY-MM-DD
